@@ -12,14 +12,14 @@
             </PatternLayout>
             <Policies>
                 <OnStartupTriggeringPolicy/>
-                <SizeBasedTriggeringPolicy size="250 MB"/>
+                <SizeBasedTriggeringPolicy size="250MB"/>
                 <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
     </Appenders>
     <Loggers>
-        <logger name="org.apache.*" level="WARN" additivity="false"/>
-        <Root level="trace">
+<!--        <logger name="org.apache.*" level="INFO" additivity="false"/>-->
+        <Root level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Root>

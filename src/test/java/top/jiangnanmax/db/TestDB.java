@@ -3,6 +3,7 @@ package top.jiangnanmax.db;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import top.jiangnanmax.util.StringUtil;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -69,6 +70,11 @@ public class TestDB {
         // null key
         String value = db.get(null);
         // should get runtime exception
+    }
+
+    @Test
+    public void testBanner() {
+        System.out.println(StringUtil.BANNER);
     }
 
 }

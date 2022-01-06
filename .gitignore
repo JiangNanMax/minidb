@@ -34,3 +34,6 @@ target
 # idea
 /.idea
 
+# log
+/logs
+
